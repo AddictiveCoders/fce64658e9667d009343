@@ -10,8 +10,13 @@ import {Text} from "react-native-paper";
 
 const PostDetailScreen = (props) => {
     return (
-        <SafeAreaView>
-            <Text>
+        <SafeAreaView style={{
+            backgroundColor: '#000',
+            flex: 1
+        }}>
+            <Text style={{
+                padding: 10,
+            }}>
                 {
                     JSON.stringify(props.route.params.data)
                 }

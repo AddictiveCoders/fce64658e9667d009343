@@ -73,8 +73,11 @@ export default class LandingScreen extends React.Component {
         }
         render() {
             return (
-                <SafeAreaView>
-                    <StatusBar backgroundColor={'#fff'} barStyle={'dark-content'}/>
+                <SafeAreaView style={{
+                    backgroundColor: '#000',
+                    flex: 1
+                }}>
+                    <StatusBar backgroundColor={'#000'} barStyle={'light-content'}/>
                     <ScrollView refreshControl={
                         <RefreshControl refreshing={this.state.loader} onRefresh={() => {}} />
                     }>

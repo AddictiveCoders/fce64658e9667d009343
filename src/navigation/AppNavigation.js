@@ -15,8 +15,22 @@ const AppNavigation = () => {
         <App.Navigator>
             <App.Screen name="Landing" component={LandingScreen} options={{
                 title: 'Post App',
+                headerTitleStyle: {
+                  color: '#fff'
+                },
+                headerStyle: {
+                    backgroundColor: '#000'
+                }
             }}/>
-            <App.Screen name="PostDetail" component={PostDetailScreen} />
+            <App.Screen name="PostDetail" component={PostDetailScreen} options={{
+                title: 'Post App',
+                headerTitleStyle: {
+                    color: '#fff'
+                },
+                headerStyle: {
+                    backgroundColor: '#000'
+                }
+            }}/>
         </App.Navigator>
     );
 };
